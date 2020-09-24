@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UFT-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Registros</title>
+</head>
+
+<body>
+    <h1>Registro</h1>
+    <p></p>
+    <!-- la etiqueta form es la que empaqueta los inputs y botones-->
+    <form class="form-register" action="insertar.php" method="post">
+        <h2 class="form__title">Llenar Registro</h2>
+        <div class="contenedores-inputs">
+            <input type="text" name="nombre" placeholder="Nombre" class="input-48" required>
+            <input type="text" name="apellido" placeholder="Apellido" class="input-48" required>
+            <input type="text" name="cedula" placeholder="Cedula" class="input-100" required>
+            <input type="text" name="telefono" placeholder="telefono" class="input-100" required>
+            <input type="text" name="email" placeholder="Email" class="input-100" required>
+            <select name="categoria" placeholder="Categoria" class="input-48" required>
+                <option value="">Elige una opcion</option>
+                <option value="calzado">Calzado</option>
+                <option value="textil">Textil</option>
+            </select>
+            <select name="categorias" class="input-48">
+                <option value="">Elige una opcion</option>
+                    <optgroup label="Calzado"></optgroup>
+                    <option value="adidas">Adidas</option>
+                    <option value="nike">Nike</option>
+                    <option value="newBalance">New Balance</option>
+                </optgroup>
+                <optgroup label="Textil">
+                    <option value="koaj">Koaj</option>
+                    <option value="Zara">Zara</option>
+                    <option value="versace">Versace</option>
+                </optgroup>
+            </select>
+            <input type="text" name="precio" placeholder="$" class="input-48" required>
+            <input type="submit" value="Resgistrar" class="btn-enviar" onclick="mostrarmensaje()"/>
+        </div>
+    </form>
+</body>
+</html>
